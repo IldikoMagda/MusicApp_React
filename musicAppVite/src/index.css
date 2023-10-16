@@ -31,6 +31,21 @@
   object-fit: cover; /* Maintain image aspect ratio */
   box-shadow: 0 0 8px 8px #0a0a0a;
 }
+.profileCard{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  margin: 2%;
+}
+.profileCard .img{
+  padding: 1%;
+  box-shadow: 0 0 8px 8px #0a0a0a;
+}
+.profileCard p{
+  padding-left: 5%;
+  font-size: 1.1em;
+}
 a {
   font-weight: 500;
   color: #646cff;

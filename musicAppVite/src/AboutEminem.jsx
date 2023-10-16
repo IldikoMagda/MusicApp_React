@@ -4,8 +4,13 @@ import eminemProfile from './assets/profile.jpg'
 export default function About(){
     return (
         <>
+        <div>
+            <h1>About Eminem</h1>
+        </div>
         <div className=" profileCard">
-            <img src={eminemProfile} alt="Eminem profile Image" />
+            <div className="pic-cont">
+               <img src={eminemProfile} alt="Eminem profile Image" />
+            </div>
             <p>
             Eminem, whose real name is Marshall Mathers, stands as an unparalleled figure in the realm of hip-hop and the broader music industry. With a career spanning decades, he has left an indelible mark on the world of rap and lyrical artistry. His greatness is a result of several remarkable attributes.
             First and foremost, Eminem's lyrical prowess is unparalleled. He possesses an uncanny ability to weave intricate rhymes, metaphors, and storytelling into his verses, showcasing a rare mastery of language and wordplay. His lyrics are a testament to his raw talent, often delving into personal struggles, social issues, and his own experiences, giving listeners an authentic glimpse into his life.
