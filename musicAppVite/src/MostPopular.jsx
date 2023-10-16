@@ -41,10 +41,11 @@ export default function Songs(){
 
         }, 
         6:{
-            "Title": "Mockingbird", 
-            "Album": "Encore", 
-            "Released": 2005,
-            "Description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur, magnam nemo delectus quam deserunt animi ducimus veniam iste possimus sint similique harum atque nobis. Totam enim ducimus aliquam provident. Nostrum voluptatem consequuntur eum voluptatibus veniam inventore dolore a distinctio veritatis voluptas rerum eos eligendi perferendis possimus, accusamus nulla optio reprehenderit."
+            "Title": "Till I collapse", 
+            "Album": "The Eminem Show", 
+            "Released": 2002,
+            "Description": 
+            "Till I Collapse is an iconic Eminem song featuring Nate Dogg. It's a high-energy rap anthem known for its intense and motivational lyrics. Eminem's relentless determination and resilience shine through as he raps about pushing through adversity. The track's powerful beats and fiery delivery make it a timeless hip-hop classic."
 
         },
         7:{
@@ -81,11 +82,11 @@ export default function Songs(){
       {Object.keys(Songs).map((key) => {
         const song = Songs[key];
         return (
-          <div key={key}>
+          <div key={key} className="song-card">
             <h2>{song.Title}</h2>
-            <p>Album: {song.Album}</p>
-            <p>Released: {song.Released}</p>
-            <p>Description: {song.Description}</p>
+            <h3>Album: {song.Album}</h3>
+            <h3>Released: {song.Released}</h3>
+            <p>{song.Description}</p>
             <button className="heart-button">
                 <svg
                     width="24"

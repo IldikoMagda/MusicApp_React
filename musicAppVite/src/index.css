@@ -84,3 +84,30 @@ h1 {
 .heart-icon {
   fill: none;
 }
+
+.song-card {
+  border: 1px solid #e0e0e0;
+
+  border-radius: 8px;
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
+  box-shadow: 0 0 4px 8px #2e2d2d;
+  padding: 16px;
+  margin: 20px;
+  max-width: 65vw;
+  background-color: #eee8f1;
+}
+
+.song-card h2 {
+  font-size: 1.6em;
+  color: #795045;
+  margin-bottom: 10px;
+}
+.song-card h3{
+  color: #94949C;
+}
+
+.song-card p {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #2c2b2b;
+}
