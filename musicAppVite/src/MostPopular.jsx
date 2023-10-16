@@ -1,4 +1,9 @@
-import React from "react"
+import React from "react";
+import ReactDOM from 'react-dom'
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+// import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import myIcon from './assets/heart-regular.svg'
+import './App.css'
 
 export default function Songs(){
     // need a songs object or class
@@ -81,6 +86,21 @@ export default function Songs(){
             <p>Album: {song.Album}</p>
             <p>Released: {song.Released}</p>
             <p>Description: {song.Description}</p>
+            <button className="heart-button">
+                <svg
+                    width="24"
+                    height="24"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    stroke="purple"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    className="heart-icon"
+                >
+                    <path d="M12 21.35l-1.45-1.32C5.4 16.47 2 13.12 2 9.5 2 7.5 3.5 6 5.5 6c1.34 0 2.61.81 3.5 1.99C9.39 6.81 10.66 6 12 6c2 0 3.5 1.5 3.5 3.5 0 3.12-3.4 6.47-8.55 10.54L12 21.35z" />
+                </svg>
+            </button>
           </div>
         );
       })}
