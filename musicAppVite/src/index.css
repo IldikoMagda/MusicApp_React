@@ -38,9 +38,9 @@
   width: 100%;
   margin: 2%;
 }
-.profileCard .img{
+.pic-cont{
   padding: 1%;
-  box-shadow: 0 0 8px 8px #0a0a0a;
+  box-shadow: 0 0 5px 8px #1a1919;
 }
 .profileCard p{
   padding-left: 5%;
@@ -111,3 +111,8 @@ h1 {
   margin-bottom: 10px;
   color: #2c2b2b;
 }
+/* 
+.liked {
+  /* Define the styles for when the button is liked (e.g., change the background color) */
+  /* background-color: purple; */
+/* } */

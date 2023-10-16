@@ -1,6 +1,5 @@
-import React, { useState } from 'react';
-import './App.css';
-const data ={
+// need a songs object or class
+const Songs ={
     1 :{
         "Title": "Mockingbird", 
         "Album": "Encore", 
@@ -69,48 +68,4 @@ const data ={
         "Description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur, magnam nemo delectus quam deserunt animi ducimus veniam iste possimus sint similique harum atque nobis. Totam enim ducimus aliquam provident. Nostrum voluptatem consequuntur eum voluptatibus veniam inventore dolore a distinctio veritatis voluptas rerum eos eligendi perferendis possimus, accusamus nulla optio reprehenderit."
 
     }
-}
-function SongCard({ song }) {
-    console.log("first funct ")
-    const [isLiked, setIsLiked] = useState(false);
-  
-    const handleClick = () => {
-      setIsLiked(!isLiked);
-    };
-  
-    return (
-      <div className={`song-card ${isLiked ? 'liked' : ''}`}>
-        <h2>{song.Title}</h2>
-        <h3>Album: {song.Album}</h3>
-        <h3>Released: {song.Released}</h3>
-        <p>{song.Description}</p>
-        <button className="heart-button" onClick={handleClick}>
-          <svg
-            width="24"
-            height="24"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            stroke={isLiked ? 'purple' : 'none'}
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth="2"
-            className="heart-icon"
-          >
-            <path d="M12 21.35l-1.45-1.32C5.4 16.47 2 13.12 2 9.5 2 7.5 3.5 6 5.5 6c1.34 0 2.61.81 3.5 1.99C9.39 6.81 10.66 6 12 6c2 0 3.5 1.5 3.5 3.5 0 3.12-3.4 6.47-8.55 10.54L12 21.35z" />
-          </svg>
-        </button>
-      </div>
-    );
-  }
-  
-  export default function SongsFunction() {
-    console.log("second funct ")
-    return (
-      <div>
-        {Object.keys(data).map((key) => {
-          const song = data[key];
-          return <SongCard key={key} song={song} />;
-        })}
-      </div>
-    );
 }

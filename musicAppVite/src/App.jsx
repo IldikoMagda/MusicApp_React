@@ -1,12 +1,11 @@
 import { useState } from 'react'
 import Header from './header'
 import AboutEminem from './AboutEminem'
-import Songs from './MostPopular'
 import './App.css'
+import SongsFunction from './MostPopular'
 
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
@@ -17,14 +16,8 @@ function App() {
         <AboutEminem/>
       </div>
       <div>
-        <Songs/>
-      </div>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>  
-      </div>
-      
+        <SongsFunction/>
+      </div> 
     </>
   )
 }
