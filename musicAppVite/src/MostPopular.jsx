@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './App.css';
 import data from './data'
-import Encore from './assets/encore.jpg'
+
 
 function SongCard({ song }) {
     const [isLiked, setIsLiked] = useState(false);
@@ -13,7 +13,7 @@ function SongCard({ song }) {
     return (
         <div className='song-cardContainer'>
             <div className='albumphoto-cont'>
-                <img src={Encore} alt="Album Photo"/>
+                <img src={song.AlbumPhoto} alt="Album Photo"/>
             </div>
             <div className={`song-card ${isLiked ? 'liked' : ''}`}>
                 <h2>{song.Title}</h2>

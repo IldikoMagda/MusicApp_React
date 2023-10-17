@@ -93,9 +93,11 @@ h1 {
 .albumphoto-cont{
   width: 25%;
   height: auto;
+  margin-top: 3%;
 }
 .albumphoto-cont img{
   margin:5%;
+  
   padding: 2%;
   width: 100%;
 }
