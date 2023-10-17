@@ -4,9 +4,9 @@ import eminemProfile from './assets/profile.jpg'
 export default function About(){
     return (
         <>
-        <div>
+        {/* <div>
             <h1>About Eminem</h1>
-        </div>
+        </div> */}
         <div className=" profileCard">
             <div className="pic-cont">
                <img src={eminemProfile} alt="Eminem profile Image" />

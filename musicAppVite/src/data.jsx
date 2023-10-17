@@ -1,5 +1,6 @@
 // need a songs object or class
-const data ={
+let data= {}
+export default data ={
     1 :{
         "Title": "Mockingbird", 
         "Album": "Encore", 

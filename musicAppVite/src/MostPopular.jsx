@@ -1,18 +1,6 @@
 import React, { useState } from 'react';
 import './App.css';
 import data from './data'
-// const data ={
-//     1 :{
-//         "Title": "Mockingbird", 
-//         "Album": "Encore", 
-//         "Released": 2005,
-//         "Description": "Mockingbird is a heartfelt Eminem song that reflects on his struggles and relationships, particularly with his daughter Hailie. Through poignant lyrics and a melancholic melody, he apologizes, expresses love, and offers solace, making it a touching, introspective track that showcases Eminem's vulnerability and depth as an artist."
-//     },
-//     2 :{
-//         "Title": "Without Me", 
-//         "Album": "The Eminem Show", 
-//         "Released": 2002,
-//         "Description" : "Without Me by Eminem is an energetic, humorous rap track. Eminem playfully returns to the music scene, declaring himself as the savior of hip-hop. The song features catchy beats, witty lyrics, and clever wordplay, making it a lighthearted and self-referential addition to his discography."
 
 //     },
 //     3 :{

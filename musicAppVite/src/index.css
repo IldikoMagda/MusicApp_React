@@ -21,7 +21,7 @@
   align-items: flex-start; /* Place the image at the top */
   width: 100 vw;
   margin: 0;
-  margin-bottom: 2%;
+  margin-bottom: 7%;
   height: 50vh;
 
 }
@@ -91,8 +91,8 @@ h1 {
   border-radius: 8px;
   /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
   box-shadow: 0 0 4px 8px #2e2d2d;
-  padding: 16px;
-  margin: 20px;
+  padding: 1.5%;
+  margin: 3%;
   max-width: 65vw;
   background-color: #eee8f1;
 }
@@ -111,8 +111,4 @@ h1 {
   margin-bottom: 10px;
   color: #2c2b2b;
 }
-/* 
-.liked {
-  /* Define the styles for when the button is liked (e.g., change the background color) */
-  /* background-color: purple; */
-/* } */
+
