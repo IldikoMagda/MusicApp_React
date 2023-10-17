@@ -1,8 +1,6 @@
 import { useState } from 'react'
-import Header from './header'
-import AboutEminem from './AboutEminem'
-import './App.css'
-import SongsFunction from './MostPopular'
+import {Header, About, SongsFunction} from './components'
+import './assets/css/App.css'
 
 
 function App() {
@@ -13,7 +11,7 @@ function App() {
         <Header/>  
       </div>
       <div>
-        <AboutEminem/>
+        <About/>
       </div>
       <div>
         <SongsFunction/>

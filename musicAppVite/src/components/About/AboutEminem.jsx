@@ -1,5 +1,5 @@
 import React from "react";
-import eminemProfile from './assets/profile.jpg'
+import eminemProfile from '../../assets/images/profile.jpg'
 
 export default function About(){
     return (
