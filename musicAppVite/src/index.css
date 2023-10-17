@@ -85,7 +85,22 @@ h1 {
   /* fill: #795045;
 } */
 
+.song-cardContainer{
+  display: flex;
+  flex-direction: row;
+  background-color: #eee8f1;
+}
+.albumphoto-cont{
+  width: 25%;
+  height: auto;
+}
+.albumphoto-cont img{
+  margin:5%;
+  padding: 2%;
+  width: 100%;
+}
 .song-card {
+  width: 70%;
   border: 1px solid #e0e0e0;
 
   border-radius: 8px;
@@ -94,7 +109,7 @@ h1 {
   padding: 1.5%;
   margin: 3%;
   max-width: 65vw;
-  background-color: #eee8f1;
+
 }
 
 .song-card h2 {
