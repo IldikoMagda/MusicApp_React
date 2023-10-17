@@ -78,12 +78,12 @@ h1 {
 }
 
 .heart-button:hover {
-  background: #94869C;
+  background: #DB9977;
 }
 
-.heart-icon {
-  fill: none;
-}
+.heart-icon {}
+  /* fill: #795045;
+} */
 
 .song-card {
   border: 1px solid #e0e0e0;

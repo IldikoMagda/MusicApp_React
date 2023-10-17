@@ -1,5 +1,5 @@
 // need a songs object or class
-const Songs ={
+const data ={
     1 :{
         "Title": "Mockingbird", 
         "Album": "Encore", 
@@ -41,31 +41,31 @@ const Songs ={
 
     },
     7:{
-        "Title": "Mockingbird", 
-        "Album": "Encore", 
-        "Released": 2005,
-        "Description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur, magnam nemo delectus quam deserunt animi ducimus veniam iste possimus sint similique harum atque nobis. Totam enim ducimus aliquam provident. Nostrum voluptatem consequuntur eum voluptatibus veniam inventore dolore a distinctio veritatis voluptas rerum eos eligendi perferendis possimus, accusamus nulla optio reprehenderit."
+        "Title": "Stan", 
+        "Album": "The Marshall Mathers LP", 
+        "Released": 2000,
+        "Description": "Stan is a narrative-driven rap song featuring Dido. It tells the story of an obsessive fan named Stan who writes letters to Eminem, expressing his admiration. However, as Stan's letters become more unhinged, the song delves into themes of fandom, mental instability, and tragic consequences. It's a haunting exploration of celebrity and its impact on fans."
 
     },
     8:{
-        "Title": "Mockingbird", 
-        "Album": "Encore", 
-        "Released": 2005,
-        "Description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur, magnam nemo delectus quam deserunt animi ducimus veniam iste possimus sint similique harum atque nobis. Totam enim ducimus aliquam provident. Nostrum voluptatem consequuntur eum voluptatibus veniam inventore dolore a distinctio veritatis voluptas rerum eos eligendi perferendis possimus, accusamus nulla optio reprehenderit."
+        "Title": "Not Afraid", 
+        "Album": "Recover", 
+        "Released": 2010,
+        "Description": "I'm Not Afraid  is an uplifting rap anthem that reflects his personal growth and recovery from addiction. The song exudes confidence and resilience, as Eminem raps about facing his demons and finding strength within himself. It's a message of self-empowerment and a declaration of fearlessness."
 
     },
     9:{
-        "Title": "Mockingbird", 
-        "Album": "Encore", 
-        "Released": 2005,
-        "Description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur, magnam nemo delectus quam deserunt animi ducimus veniam iste possimus sint similique harum atque nobis. Totam enim ducimus aliquam provident. Nostrum voluptatem consequuntur eum voluptatibus veniam inventore dolore a distinctio veritatis voluptas rerum eos eligendi perferendis possimus, accusamus nulla optio reprehenderit."
+        "Title": "Cleanin' out my closet", 
+        "Album": "The Eminem Show", 
+        "Released": 2002,
+        "Description": "Cleaning Out My Closet is a deeply personal and emotional track where he addresses his troubled relationship with his mother. He vents his frustrations and regrets, reflecting on the pain and trauma from his childhood. It's a raw and cathartic song that explores complex family dynamics and personal healing."
 
     },
     10: {
-        "Title": "Mockingbird", 
-        "Album": "Encore", 
-        "Released": 2005,
-        "Description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur, magnam nemo delectus quam deserunt animi ducimus veniam iste possimus sint similique harum atque nobis. Totam enim ducimus aliquam provident. Nostrum voluptatem consequuntur eum voluptatibus veniam inventore dolore a distinctio veritatis voluptas rerum eos eligendi perferendis possimus, accusamus nulla optio reprehenderit."
+        "Title": "Beautiful", 
+        "Album": "Relapse", 
+        "Released": 2009,
+        "Description": "Beautiful by Eminem is a introspective and emotionally charged song. Eminem delves into his struggles with fame, substance abuse, and self-doubt. The lyrics reveal his inner turmoil, contemplating the beauty of life amidst chaos. The song's somber tone and powerful storytelling make it a poignant reflection on the highs and lows of his life, offering glimpses of hope and resilience."
 
     }
 }
