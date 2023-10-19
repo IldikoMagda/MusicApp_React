@@ -35,6 +35,10 @@ function Nav() {
             <NavLink to ='/TopSongs' style= {({ isActive}) => (isActive? activestyle: notActive)}>Most Popular Songs
             </NavLink>
         </li>
+        <li className="nav-item">
+            <NavLink to ='/Albums' style= {({ isActive}) => (isActive? activestyle: notActive)}>Albums
+            </NavLink>
+        </li>
       </ul>     
     </nav>
     <Outlet/>
