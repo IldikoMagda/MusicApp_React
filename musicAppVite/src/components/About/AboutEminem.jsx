@@ -1,7 +1,9 @@
 import React from "react";
-import eminemProfile from './assets/profile.jpg'
+import { useNavigate } from "react-router-dom";
+import eminemProfile from '../../assets/images/profile.jpg'
 
 export default function About(){
+    const navigate = useNavigate()
     return (
         <>
         {/* <div>
@@ -19,6 +21,8 @@ export default function About(){
             In essence, Eminem's greatness lies in his exceptional lyrical talent, his pioneering contributions to the hip-hop genre, and his unwavering commitment to his craft. He remains a lyrical genius, a cultural icon, and an artist whose legacy will endure for generations to come.
             </p>
         </div>
+        <button onClick={()=> navigate('/')}>Back To Home</button>
+
         </>
     )
 }

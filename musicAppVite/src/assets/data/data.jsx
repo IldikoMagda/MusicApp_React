@@ -1,9 +1,9 @@
 // need a songs object or class
-import encore from './assets/encore.jpg'
-import theEminemShow from './assets/theeminemshow.jpg'
-import theMarshallMathers from './assets/themarshallmathers.jpg'
-import recovery from './assets/recovery.jpg'
-import relapse from './assets/relapse.jpg'
+import encore from '../images/encore.jpg'
+import theEminemShow from '../images/theeminemshow.jpg'
+import theMarshallMathers from '../images/themarshallmathers.jpg'
+import recovery from '../images/recovery.jpg'
+import relapse from '../images/relapse.jpg'
 
 
 let data= {}

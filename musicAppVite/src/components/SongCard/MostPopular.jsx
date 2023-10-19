@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-import './App.css';
-import data from './data'
+  import data from '../../assets/data/data'
 
 
 function SongCard({ song }) {
