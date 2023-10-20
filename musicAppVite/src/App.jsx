@@ -1,26 +1,32 @@
-import { useState } from 'react'
+import React, { useState } from 'react'
 import {Header, About, SongsFunction, Nav, Home, Albums} from './components'
 import {Routes, Route} from 'react-router-dom'
 import './assets/css/App.css'
-
+import { ThemeProvider, useTheme, useThemeUpdate } from './components/Theme/themeProvider'
+import Theme from './components/Theme/theme'
 
 function App() {
+  const darkTheme = useTheme()
+  const rootClassName = darkTheme? "dark-theme" :"light"
+  const toggleTheme = useThemeUpdate();
 
   return (
     <>
-    <div className="App">
+    <ThemeProvider>
+      <div className={`App ${rootClassName}`}>
       {/* all the routes */}
-      <Routes>
-        {/* all routes from main */}
-        <Route path='/' element = {<Nav/>}>
-          <Route index element ={<Home/>}/>
-          <Route path ='about' element={<><Header/><About/></>}/>
-          <Route path ='TopSongs' element={<SongsFunction/>}/>
-          <Route path ='Albums' element={<Albums/>}/>
-          <Route path ='*' element= {<h1>Page Not Found</h1>}/>
-        </Route>
-      </Routes>
-    </div>
+        <Routes>
+          {/* all routes from main */}
+          <Route path='/' element = {<Nav/>}>
+            <Route index element ={<Home/>}/>
+            <Route path ='about' element={<><Header/><About/></>}/>
+            <Route path ='TopSongs' element={<SongsFunction/>}/>
+            <Route path ='Albums' element={<Albums/>}/>
+            <Route path ='*' element= {<h1>Page Not Found</h1>}/>
+          </Route>
+        </Routes>
+      </div>
+    </ThemeProvider>
     </>
   )
 }

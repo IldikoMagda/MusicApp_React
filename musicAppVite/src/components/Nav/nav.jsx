@@ -1,4 +1,5 @@
 import { NavLink, Outlet } from "react-router-dom"
+import Theme from "../Theme/theme"
 
 
 let activestyle ={
@@ -17,8 +18,6 @@ let notActive ={
 
 }
 function Nav() {
-
-
   return (
     <>
     <nav>
@@ -41,6 +40,7 @@ function Nav() {
         </li>
       </ul>     
     </nav>
+    <Theme/>
     <Outlet/>
     </>
   )

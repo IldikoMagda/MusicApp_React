@@ -23,7 +23,6 @@ function AlbumCard({ album }){
     // Update the local state to reflect the change
         setDislikes(dislikes + 1);
     }
-    console.log(album.key)
     return (
         <div className="album-container">
           <div className="albumphoto-cont">

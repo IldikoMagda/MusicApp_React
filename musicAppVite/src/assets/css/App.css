@@ -7,14 +7,36 @@
   padding: 0;
   line-height: 1.5;
   font-weight: 400;
-
+/* 
   color-scheme: light dark;
   color: #ffffffde;
-  background-color: #353130;
+  background-color: #353130; */
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+}
+/* #root.App {
+  color-scheme: normal;
+  color: black;
+  background-color: red;
+}
+#root.App.dark-theme{
+  color-scheme: dark;
+  color: #ffffffde;
+  background-color: #353130; */
+
+/* } */
+
+body.light {
+  color-scheme: normal;
+  color: black;
+  background-color: red;
+}
+body.dark{
+  color-scheme: dark;
+  color: #ffffffde;
+  background-color: #353130;
 }
