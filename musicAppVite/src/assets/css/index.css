@@ -115,3 +115,35 @@ h1 {
   margin-bottom: 10px;
   color: #2c2b2b;
 }
+
+.all-albums{
+  width: 70vww;
+  display: flex;
+  flex-direction: row;
+  flex-flow: wrap;
+  justify-content: center;
+}
+.album-container{
+  width: 40%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 2%;
+}
+
+.albumdetails{
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  max-width: 60%;
+  padding: 2%;
+}
+.albumIMG-cont{
+  box-shadow: 0 0 4px 8px #202020;
+  max-width: 25%;
+  max-height: 90%;
+}
+/* .albumIMG-cont .img{
+  width: 100%;
+  max-width: 100%;
+} */

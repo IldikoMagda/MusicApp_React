@@ -12,7 +12,6 @@ function AlbumCard({ album }){
     const [likes, setLikes] = useState(album.liked);
     const [dislikes, setDislikes] = useState(album.disliked);
 
-    console.log(album)
     const handleLike =() =>{
         dispatch(like(album.name,1));
     // Update the local state to reflect the change
@@ -25,7 +24,7 @@ function AlbumCard({ album }){
     }
     return (
         <div className="album-container">
-          <div className="albumphoto-cont">
+          <div className="albumIMG-cont">
             <img src={imageSrc} alt="album photo" />
           </div>
           <div className="albumdetails">

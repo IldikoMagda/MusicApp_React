@@ -3,7 +3,7 @@ import {Header, About, SongsFunction, Nav, Home, Albums} from './components'
 import {Routes, Route} from 'react-router-dom'
 import './assets/css/App.css'
 import { ThemeProvider, useTheme, useThemeUpdate } from './components/Theme/themeProvider'
-import Theme from './components/Theme/theme'
+
 
 function App() {
   const darkTheme = useTheme()
@@ -13,7 +13,7 @@ function App() {
   return (
     <>
     <ThemeProvider>
-      <div className={`App ${rootClassName}`}>
+      <div className="App">
       {/* all the routes */}
         <Routes>
           {/* all routes from main */}
