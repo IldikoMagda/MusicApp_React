@@ -6,32 +6,25 @@ const initialState = albums
 
 const likeReducer = (state= initialState, action ) =>{ 
     switch  (action.type){
-        // case "like":
-        //     let id = action.id
-        //     //first copy of state, then copy album properties
-        //     return {...state, [action.id], value: state[id].liked + action.payload}
         case "like":
+            const { name, value } = action.payload;
+            const likedAlbum = {...state[name]};
+            console.log(likedAlbum)
+            likedAlbum.liked += value;
+            console.log(likedAlbum)
             return {
-              ...state,
-              [action.id]: {
-                ...state[action.id],
-                liked: state[action.id].liked + action.payload,
-              },
-            };
-        // case "dislike":
-        //     return {...state.id, value: state[id].disliked - action.payload}
-        // default:
-        //     return state
+              ...state, [name]: likedAlbum,
+              };
         case "dislike":
+            const { name: dislikeName, value: dislikeValue } = action.payload;
+            const dislikedAlbum = { ...state[dislikeName] }; // Make a copy of the album
+            dislikedAlbum.disliked += dislikeValue; // Update the disliked count
             return {
                 ...state,
-                [action.id]: {
-                ...state[action.id],
-                disliked: state[action.id].disliked - action.payload,
-                },
+                [dislikeName]: dislikedAlbum, // Update the state with the modified album
             };
         default:
-            return state;
-    }
-}
+                return state;
+            }
+          };
 export default likeReducer

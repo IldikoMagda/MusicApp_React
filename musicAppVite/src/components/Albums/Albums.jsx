@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import albums from '../../assets/data/albums'
 import { useSelector, useDispatch } from "react-redux";
 import { actionCreators } from '../../action-creators'
@@ -14,15 +14,16 @@ function AlbumCard({ album }){
 
     console.log(album)
     const handleLike =() =>{
-        dispatch(like(album.key, 1));
+        dispatch(like(album.name,1));
     // Update the local state to reflect the change
         setLikes(likes + 1);
     }
     const handleDislike =() =>{
-        dispatch(dislike(album.key, 1));
+        dispatch(dislike(album.name,1));
     // Update the local state to reflect the change
         setDislikes(dislikes + 1);
     }
+    console.log(album.key)
     return (
         <div className="album-container">
           <div className="albumphoto-cont">
@@ -36,7 +37,7 @@ function AlbumCard({ album }){
                 <button onClick={handleLike}>Like ({likes})</button>
               </div>
               <div className="dislike">
-                <button onClick={handleDislike}>Dislike ({dislike})</button>
+                <button onClick={handleDislike}>Dislike ({dislikes})</button>
               </div>
             </div>
           </div>
@@ -47,19 +48,16 @@ const AllAlbums = () => {
     const albumList = Object.values(albums); // Convert the object values to an array
     return (
       <div className="all-albums">
-        {albumList.map((album) => {
+        {albumList.map((album, i) => {
           return (
             <>
-              <AlbumCard key={albums.id} album={album} />
+              <AlbumCard key={i} album={album} />
             </>
           );
         })}
       </div>
     );
   };
-
-
-
 const Albums = () => {
   return (
     <>
