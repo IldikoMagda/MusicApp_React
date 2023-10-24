@@ -1,5 +1,7 @@
-import React, { useState, useRef, useMemo } from 'react';
-  import data from '../../assets/data/data'
+import React, { useState, useRef, useMemo, Link } from 'react';
+import data from '../../assets/data/data'
+import ListenNow from '../../components';
+
 
 
 function SongCard({ song }) {
@@ -34,6 +36,7 @@ function SongCard({ song }) {
                     <path d="M12 21.35l-1.45-1.32C5.4 16.47 2 13.12 2 9.5 2 7.5 3.5 6 5.5 6c1.34 0 2.61.81 3.5 1.99C9.39 6.81 10.66 6 12 6c2 0 3.5 1.5 3.5 3.5 0 3.12-3.4 6.47-8.55 10.54L12 21.35z" />
                 </svg>
                 </button>
+                {song.url && <ListenNow url={song.url} />}
             </div>
       </div>
     );
@@ -41,7 +44,7 @@ function SongCard({ song }) {
   
   export default function SongsFunction() {
     const [query, setQuery] = useState("");
-    
+
     const filteredSongs = useMemo(() =>{
        return Object.values(data).filter(song =>{
        return song.Title.toLowerCase().includes(query.toLowerCase())
