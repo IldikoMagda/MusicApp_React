@@ -3,6 +3,15 @@ import {Header, About, SongsFunction, Nav, Home, Albums} from './components'
 import {Routes, Route} from 'react-router-dom'
 import './assets/css/App.css'
 import { ThemeProvider, useTheme, useThemeUpdate } from './components/Theme/themeProvider'
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { fas } from '@fortawesome/free-solid-svg-icons'
+import { faTwitter, faFontAwesome } from '@fortawesome/free-brands-svg-icons'
+
+library.add(fas, faTwitter, faFontAwesome)
+
+
+
+
 
 
 function App() {

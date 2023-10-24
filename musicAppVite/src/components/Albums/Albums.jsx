@@ -2,6 +2,7 @@ import React, {useState} from 'react'
 import albums from '../../assets/data/albums'
 import { useSelector, useDispatch } from "react-redux";
 import { actionCreators } from '../../action-creators'
+import BuyNow from '../BuyNow/BuyNow';
 
 function AlbumCard({ album }){
     const imageSrc = album.image || '';
@@ -30,6 +31,8 @@ function AlbumCard({ album }){
           <div className="albumdetails">
             <h2 className="album-title">{album.name}</h2>
             <h3 className="album-released">{album.released}</h3>
+            {album.url && <BuyNow url={album.url} />}
+            <br />
             <div className="reaction-container">
               <div className="like">
                 <button onClick={handleLike}>Like ({likes})</button>

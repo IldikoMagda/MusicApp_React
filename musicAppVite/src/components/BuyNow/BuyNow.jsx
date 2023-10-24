@@ -1,16 +1,16 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-export default function ListenNow( {url} ) {
+export default function BuyNow( {url }) {
   return (
     <a
-        className='listen-now-link'
+        className='buy-now-link'
         href={url}
         target='_blank'
         rel="noopener"
-        aria-label='Listen Now'
+        aria-label='Buy Now'
     >
-        <FontAwesomeIcon icon="fa-solid fa-music" />
+        <FontAwesomeIcon icon="fa-shopping-cart" />
     </a>
   )
 }
