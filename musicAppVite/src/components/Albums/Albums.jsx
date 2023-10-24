@@ -58,10 +58,11 @@ const AllAlbums = () => {
   };
 const Albums = () => {
   return (
-    <>
-        <h1>Albums</h1>
-        <h2>See a collection of Eminem's albums, like them or buy them!</h2>
-        <div>
+    <> 
+    <div className="album-intro">
+        <h1>Find All Albums by Eminem, like them or buy them!</h1>
+    </div>
+        <div className='album-page'>
         <AllAlbums/>
         </div>
     </>

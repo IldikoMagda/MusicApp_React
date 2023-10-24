@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef, useMemo } from 'react';
   import data from '../../assets/data/data'
 
 
@@ -40,12 +40,25 @@ function SongCard({ song }) {
   }
   
   export default function SongsFunction() {
+    const [query, setQuery] = useState("");
+    
+    const filteredSongs = useMemo(() =>{
+       return Object.values(data).filter(song =>{
+       return song.Title.toLowerCase().includes(query.toLowerCase())
+    })
+  }, [query])
+
+    console.log(filteredSongs)
     return (
-      <div>
-        {Object.keys(data).map((key) => {
-          const song = data[key];
-          return <SongCard key={key} song={song} />;
+      <>
+      <div className="searchbar-cont">
+        Search For Your Favourite Song : <input value={query} onChange={(e) => setQuery(e.target.value)} type="search" />
+      </div>
+      <div className='all-songsContainer'>
+        {filteredSongs.map((song, index) => {
+          return <SongCard key={index} song={song} />;
         })}
       </div>
+      </>
     );
 }

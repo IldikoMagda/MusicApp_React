@@ -18,7 +18,7 @@ const Home = () => {
     };
 
     // Set a timer to switch to the next video every, for example, 10 seconds
-    const videoTimer = setInterval(switchToNextVideo, 270000); // 10 seconds
+    const videoTimer = setInterval(switchToNextVideo, 260000); // 10 seconds
 
     // Clear the timer when the component unmounts
     return () => clearInterval(videoTimer);

@@ -72,24 +72,37 @@ h1 {
   background: #DB9977;
 }
 
-
+.all-songsContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .song-cardContainer{
   display: flex;
   flex-direction: row;
+  width: 60vw;
+  justify-content:flex-end;
+  align-items: center;
   
+}
+.album-intro{
+  margin: 2%;
 }
 .albumphoto-cont{
   width: 25%;
   height: auto;
   max-height: 100%;
-  margin-top: 3%;
+  margin-top: 2%;
 
 }
-.albumphoto-cont img{
-  margin:5%; 
-  padding: 2%;
+.albumphoto-cont img, .albumIMG-cont img{
   width: 100%;
   box-shadow: 0 0 4px 8px #202020;
+  margin-top: 1%;
+  max-width: 100%;
+  max-height: 100%;
+  height: 100%;
 }
 .song-card {
   width: 70%;
@@ -105,13 +118,15 @@ h1 {
 
 }
 
-.song-card h2 {
-  font-size: 1.6em;
+.song-card h2, .albumdetails h2{
+  font-size: 1.7em;
+  font-weight: 700;
   color: #795045;
   margin-bottom: 10px;
 }
-.song-card h3{
+.song-card h3, .albumdetails h3{
   color: #94949C;
+  font-size: 1.1em;
 }
 
 .song-card p {
@@ -119,16 +134,24 @@ h1 {
   margin-bottom: 10px;
   color: #2c2b2b;
 }
+.album-page{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
 .all-albums{
-  width: 70vw;
+  width: 80vw;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
 }
 .album-container{
   width: 40%;
+  background-color: #eee8f1;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -146,12 +169,6 @@ h1 {
   box-shadow: 0 0 4px 8px #202020;
   max-width: 25%;
   max-height: 90%;
-  width: 100%;
-  height: 100%;
-}
-.albumIMG-cont img{
-  max-width: 100%;
-  max-height: 100%;
   width: 100%;
   height: 100%;
 }
@@ -192,13 +209,3 @@ video {
   height: 70vh; 
   overflow: hidden;
 }
-/* .page-container {
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-  position: relative;
-} */
