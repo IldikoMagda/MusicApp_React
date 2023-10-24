@@ -190,6 +190,9 @@ h1 {
   flex-direction: row;
   justify-content: center;
 }
+.page-container{
+  width: 100vw;
+}
 .player-wrapper{
   position: absolute;
   top: 0;
@@ -199,14 +202,6 @@ h1 {
   object-fit: cover;
   overflow: hidden;
   z-index: -2;
-}
-video {
-  object-fit: cover;
-  width: 100vw;
-  height: 100vh;
-  position: fixed;
-  top: 0;
-  left: 0;
 }
 .overlay{
   position: absolute;
@@ -220,6 +215,7 @@ video {
 .welcome-message{
   font-family: 'Fredericka the Great', cursive;
 }
+
 .welcome-container {
   display: flex;
   justify-content: center;
