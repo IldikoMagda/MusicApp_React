@@ -5,7 +5,7 @@ export default function Header(){
     return (
         <>
         <div className="header">
-            <img src={eminemHeader} alt="Eminem header Image" />
+            {/* <img src={eminemHeader} alt="Eminem header Image" /> */}
         </div>
         
         </>

@@ -9,9 +9,7 @@ const likeReducer = (state= initialState, action ) =>{
         case "like":
             const { name, value } = action.payload;
             const likedAlbum = {...state[name]};
-            console.log(likedAlbum)
             likedAlbum.liked += value;
-            console.log(likedAlbum)
             return {
               ...state, [name]: likedAlbum,
               };

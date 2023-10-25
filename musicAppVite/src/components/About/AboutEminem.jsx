@@ -6,9 +6,10 @@ export default function About(){
     const navigate = useNavigate()
     return (
         <>
-        {/* <div>
+        <div>
             <h1>About Eminem</h1>
-        </div> */}
+        </div>
+        <div className="profile-page">
         <div className=" profileCard">
             <div className="pic-cont">
                <img src={eminemProfile} alt="Eminem profile Image" />
@@ -21,8 +22,8 @@ export default function About(){
             In essence, Eminem's greatness lies in his exceptional lyrical talent, his pioneering contributions to the hip-hop genre, and his unwavering commitment to his craft. He remains a lyrical genius, a cultural icon, and an artist whose legacy will endure for generations to come.
             </p>
         </div>
+        </div>
         <button onClick={()=> navigate('/')}>Back To Home</button>
-
         </>
     )
 }

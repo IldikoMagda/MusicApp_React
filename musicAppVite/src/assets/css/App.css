@@ -1,15 +1,10 @@
 #root {
   margin: 0 auto;
-  padding: 2rem;
   text-align: center;
-  /* background-color: #111; */
   color: #fff;
   font-family: 'Fredericka the Great', cursive, sans-serif;
-  padding: 0;
   line-height: 1.5;
   font-weight: 400;
-
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -17,13 +12,28 @@
   -webkit-text-size-adjust: 100%;
 }
 
+#root::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('../images/warehousewall2.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  z-index: -3; 
+}
 
 body.light {
   color-scheme: normal;
   color: black;
   background-color: rgb(214, 116, 70);
 }
-body.dark{
+
+body.dark {
   color-scheme: dark;
   color: #ffffffde;
   background-color: #353130;

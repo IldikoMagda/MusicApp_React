@@ -28,7 +28,7 @@ function App() {
           {/* all routes from main */}
           <Route path='/' element = {<Nav/>}>
             <Route index element ={<Home/>}/>
-            <Route path ='about' element={<><Header/><About/></>}/>
+            <Route path ='about' element={<><About/></>}/>
             <Route path ='TopSongs' element={<SongsFunction/>}/>
             <Route path ='Albums' element={<Albums/>}/>
             <Route path ='*' element= {<h1>Page Not Found</h1>}/>

@@ -1,4 +1,3 @@
-
 .header{
   display: flex;
   justify-content: center; /* Center the image horizontally */
@@ -7,7 +6,6 @@
   margin: 0;
   margin-bottom: 5%;
   height: 50vh;
-
 }
 .header img {
   width: 80%;
@@ -15,13 +13,23 @@
   object-fit: cover; /* Maintain image aspect ratio */
   box-shadow: 0 0 8px 8px #474646;
 }
+.profile-page{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .profileCard{
+  background-color: #eee8f1;
+  opacity: 0.9;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 0 4px 8px #2e2d2d;
   padding: 3%;
   padding-left: 7%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  max-width: 90%;
+  max-width: 70%;
   margin: 1%;
 }
 .pic-cont{
@@ -37,13 +45,17 @@
   padding-left: 2%;
   font-size: 1.4em;
   margin:1%;
+  color: black;
+  font-weight: 700;
 }
 
 .nav{
+  top: 0;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-
+  margin: 0;
+  padding: 0; 
 }
 .nav-pills{
   max-height: 6vh;
@@ -114,6 +126,7 @@ h1 {
 .album-container{
   width: 40%;
   background-color: #eee8f1;
+  opacity: 0.9;
   border-radius: 8px;
   border: 1px solid #e0e0e0;
   box-shadow: 0 0 4px 8px #2e2d2d;
@@ -126,6 +139,7 @@ h1 {
   width: 70%;
   border: 1px solid #e0e0e0;
   background-color: #eee8f1;
+  opacity: 0.9;
 
   border-radius: 8px;
   /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
@@ -220,6 +234,6 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 70vh; 
+  height: 70vh;
   overflow: hidden;
 }
